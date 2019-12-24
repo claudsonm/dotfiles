@@ -1,0 +1,57 @@
+# Path to your oh-my-zsh installation.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+# Would you like to use another custom folder than $ZSH/custom?
+ZSH_CUSTOM=$HOME/.dotfiles/misc/oh-my-zsh-custom
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+	git
+	git-flow-avh
+	redis-cli
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	zsh-completions
+	colored-man-pages
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# Load the shell dotfiles, and then some:
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.dotfiles/shell/.{exports,aliases,functions}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+
+for file in ~/.dotfiles-custom/shell/.{exports,aliases,functions,zshrc}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
+
+
+export PATH=$HOME/.dotfiles/bin:$PATH
+
+# Setup xdebug
+export XDEBUG_CONFIG="idekey=PHPSTORM"
+
+# Enable autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Extra paths
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH="$HOME/.yarn/bin:$PATH"

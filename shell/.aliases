@@ -1,0 +1,55 @@
+# For a full list of active aliases, run `alias`.
+
+# ZSH
+alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# General
+alias ~='cd ~'
+alias docs='cd /Users/claudson/Documents'
+alias down='cd /Users/claudson/Downloads'
+alias sites='cd /Users/claudson/Sites'
+alias ip="curl https://diagnostic.opendns.com/myip ; echo"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias hostfile="sudo vi /etc/hosts"
+
+# PHP
+alias a='php artisan'
+alias m='php artisan migrate'
+alias mr='php artisan migrate:rollback'
+alias mf='php artisan migrate:fresh'
+alias mfs='php artisan migrate:fresh --seed'
+alias t='rlwrap php artisan tinker'
+alias routes='php artisan route:list'
+alias ide-helper-files='php artisan clear-compiled && php artisan ide-helper:models -n && php artisan ide-helper:eloquent && php artisan ide-helper:generate && php artisan ide-helper:meta'
+alias c="composer"
+alias cu="composer update"
+alias cr="composer require"
+alias ci="composer install"
+alias cda="composer dump-autoload -o"
+alias hashid="head /dev/urandom | tr -dc 'A-Za-z0-9!#$%&()*+,-./:;<=>?@[\]^_{|}~' | head -c 32 ; echo"
+alias p="phpunit"
+alias pf="phpunit --filter"
+alias d="php artisan dusk"
+alias df="php artisan dusk --filter"
+
+# Git
+alias ga='git add'
+alias gbdel='gbdel(){ git branch -D $1 && git push origin --delete $1 }; gbdel'
+alias gc='git commit -m'
+alias gca='git commit . -m'
+alias gch='git checkout'
+alias gd='git diff'
+alias gm="git merge"
+alias gk='gitk 2>/dev/null&'
+alias gl='git log --oneline --all --graph --decorate --abbrev-commit'
+alias gp='git pull'
+alias gpr='git pull --rebase'
+alias gps='git push'
+alias gs='git status'
+alias nah='git reset --hard && git clean -df'
+alias wip='git add . && git commit -m "WIP"'
+
+# Wordpress CLI
+alias wp='vendor/bin/wp'
