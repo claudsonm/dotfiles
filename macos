@@ -84,9 +84,3 @@ brew install git-flow-avh
 echo 'Install gitk'
 echo '------------'
 brew install gitk
-
-echo '++++++++++++++++++++++++++++++'
-echo '++++++++++++++++++++++++++++++'
-echo 'All done!'
-echo '++++++++++++++++++++++++++++++'
-echo '++++++++++++++++++++++++++++++'
