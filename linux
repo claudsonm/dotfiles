@@ -25,6 +25,9 @@ curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/in
 rm -f $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
+# Making Oh My ZSH the default
+chsh -s $(which zsh)
+
 echo 'Install php'
 echo '-----------'
 sudo apt install php7.0 -y
