@@ -1,0 +1,99 @@
+#!/bin/bash
+
+# GNU Linux specific installation comamnds
+
+echo 'Updating repository...'
+echo '-----------'
+apt update
+
+echo 'Install build essential'
+echo '-----------'
+apt install build-essential
+
+echo 'Install curl'
+echo '------------'
+apt install curl
+
+# Install zsh
+echo 'Install oh-my-zsh'
+echo '-----------------'
+apt install zsh
+rm -rf $HOME/.oh-my-zsh
+curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# Symlink zsh prefs
+rm -f $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+
+echo 'Install php'
+echo '-----------'
+apt install php7.0
+apt install php7.1
+apt install php7.2
+apt install php7.4
+apt install php-pear
+apt install libapache2-mod-php
+apt install php-mysql
+
+echo 'Install composer'
+echo '----------------'
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'a5c698ffe4b8e849a443b120cd5ba38043260d5c4023dbf93e1558871f1f07f58274fc6f4c93bcfd858c6bd0775cd8d1') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+mv composer.phar /usr/local/bin/composer
+
+echo 'Install node'
+echo '-----------'
+apt install nodejs
+
+echo 'Install wget'
+echo '------------'
+apt install wget
+
+echo 'Install httpie'
+echo '--------------'
+apt install httpie
+
+echo 'Install apache2'
+echo '-----------'
+apt install apache2
+
+echo 'Install imagemagick'
+echo '-------------------'
+apt install imagemagick
+
+echo 'Install imagick'
+echo '---------------'
+apt install php-imagick
+
+echo 'Install xdebug'
+echo '--------------'
+pecl install xdebug
+
+echo 'Install redis'
+echo '-------------'
+apt install redis-server
+pecl install redis
+
+echo 'Install mysql'
+echo '-------------'
+apt install mariadb-server
+
+echo 'Install yarn'
+echo '------------'
+apt install yarn
+
+echo 'Install git flow avh'
+echo '------------'
+apt install git-flow
+
+echo 'Install gitk'
+echo '------------'
+apt install gitk
+
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'
+echo 'All done!'
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'

@@ -1,0 +1,92 @@
+#!/bin/bash
+
+# macOS specific installation comamnds
+
+# Install zsh
+echo 'Install oh-my-zsh'
+echo '-----------------'
+rm -rf $HOME/.oh-my-zsh
+curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# Symlink zsh prefs
+rm -f $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+
+echo 'Install composer'
+echo '----------------'
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'a5c698ffe4b8e849a443b120cd5ba38043260d5c4023dbf93e1558871f1f07f58274fc6f4c93bcfd858c6bd0775cd8d1') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+mv composer.phar /usr/local/bin/composer
+
+echo 'Install homebrew'
+echo '----------------'
+echo install homebrew
+sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo 'Install node'
+echo '-----------'
+brew install node
+
+echo 'Install wget'
+echo '------------'
+brew install wget --overwrite
+
+echo 'Install httpie'
+echo '--------------'
+brew install httpie
+
+echo 'Install php'
+echo '-----------'
+brew install php@7.0
+brew install php@7.1
+brew install php@7.2
+brew install php@7.4
+
+echo 'Install imagemagick'
+echo '-------------------'
+brew install imagemagick
+
+echo 'Install imagick'
+echo '---------------'
+pecl install imagick
+
+echo 'Install xdebug'
+echo '--------------'
+pecl install xdebug
+
+echo 'Install redis'
+echo '-------------'
+brew install redis
+brew services start redis
+pecl install redis
+
+echo 'Install laravel valet'
+echo '---------------------'
+composer global require laravel/valet
+valet install
+
+echo 'Install mariadb'
+echo '-------------'
+brew install mariadb
+brew services start mariadb
+
+echo 'Install yarn'
+echo '------------'
+brew install yarn
+
+echo 'Install git flow avh'
+echo '------------'
+brew install git-flow-avh
+
+echo 'Install gitk'
+echo '------------'
+brew install gitk
+
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'
+echo 'All done!'
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'

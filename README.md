@@ -7,6 +7,7 @@ You can install them by cloning the repository as `.dotfiles` in your home direc
 ```
 git clone git@github.com:claudsonm/dotfiles.git .dotfiles
 cd .dotfiles
+chmod +x bootstrap
 ./bootstrap
 ```
 
