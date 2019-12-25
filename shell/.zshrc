@@ -25,6 +25,9 @@ plugins=(
 	colored-man-pages
 )
 
+# Reloading the completion for zsh-completions
+autoload -U compinit && compinit
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -45,9 +48,6 @@ export PATH=$HOME/.dotfiles/bin:$PATH
 
 # Setup xdebug
 export XDEBUG_CONFIG="idekey=PHPSTORM"
-
-# Enable autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Extra paths
 export PATH="$HOME/.composer/vendor/bin:$PATH"
