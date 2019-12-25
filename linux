@@ -8,16 +8,16 @@ sudo apt update
 
 echo 'Install build essential'
 echo '-----------'
-sudo apt install build-essential
+sudo apt install build-essential -y
 
 echo 'Install curl'
 echo '------------'
-sudo apt install curl
+sudo apt install curl -y
 
 # Install zsh
 echo 'Install oh-my-zsh'
 echo '-----------------'
-sudo apt install zsh
+sudo apt install zsh -y
 rm -rf $HOME/.oh-my-zsh
 curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
@@ -27,13 +27,13 @@ ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
 echo 'Install php'
 echo '-----------'
-sudo apt install php7.0
-sudo apt install php7.1
-sudo apt install php7.2
-sudo apt install php7.4
-sudo apt install php-pear
-sudo apt install libapache2-mod-php
-sudo apt install php-mysql
+sudo apt install php7.0 -y
+sudo apt install php7.1 -y
+sudo apt install php7.2 -y
+sudo apt install php7.4 -y
+sudo apt install php-pear -y
+sudo apt install libapache2-mod-php -y
+sudo apt install php-mysql -y
 
 echo 'Install composer'
 echo '----------------'
@@ -45,49 +45,49 @@ mv composer.phar /usr/local/bin/composer
 
 echo 'Install node'
 echo '-----------'
-sudo apt install nodejs
+sudo apt install nodejs -y
 
 echo 'Install wget'
 echo '------------'
-sudo apt install wget
+sudo apt install wget -y
 
 echo 'Install httpie'
 echo '--------------'
-sudo apt install httpie
+sudo apt install httpie -y
 
 echo 'Install apache2'
 echo '-----------'
-sudo apt install apache2
+sudo apt install apache2 -y
 
 echo 'Install imagemagick'
 echo '-------------------'
-sudo apt install imagemagick
+sudo apt install imagemagick -y
 
 echo 'Install imagick'
 echo '---------------'
-sudo apt install php-imagick
+sudo apt install php-imagick -y
 
 echo 'Install xdebug'
 echo '--------------'
-pecl install xdebug
+pecl install xdebug -y
 
 echo 'Install redis'
 echo '-------------'
-sudo apt install redis-server
+sudo apt install redis-server -y
 pecl install redis
 
 echo 'Install mysql'
 echo '-------------'
-sudo apt install mariadb-server
+sudo apt install mariadb-server -y
 
 echo 'Install yarn'
 echo '------------'
-sudo apt install yarn
+sudo apt install yarn -y
 
 echo 'Install git flow avh'
 echo '------------'
-sudo apt install git-flow
+sudo apt install git-flow -y
 
 echo 'Install gitk'
 echo '------------'
-sudo apt install gitk
+sudo apt install gitk -y
