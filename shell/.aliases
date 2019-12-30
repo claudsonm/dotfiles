@@ -1,17 +1,21 @@
 # For a full list of active aliases, run `alias`.
 
+DOCS_FOLDER=`[[ "$OSTYPE" == "darwin"* ]] && echo "$HOME/Documents" || echo "$HOME/Documentos"`
+SITES_FOLDER=`[[ "$OSTYPE" == "darwin"* ]] && echo "$HOME/Sites" || echo "$HOME/Documentos/Projetos"`
+PHPSTORM_CMD=`[[ "$OSTYPE" == "darwin"* ]] && echo 'open -a /Applications/PhpStorm.app' || echo 'phpstorm'`
+
 # ZSH
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # General
 alias ~='cd ~'
-alias docs='cd /Users/claudson/Documents'
-alias down='cd /Users/claudson/Downloads'
-alias sites='cd /Users/claudson/Sites'
+alias docs='cd $DOCS_FOLDER'
+alias down='cd $HOME/Downloads'
+alias sites='cd $SITES_FOLDER'
 alias ip="curl https://diagnostic.opendns.com/myip ; echo"
 alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias phpstorm='$PHPSTORM_CMD `pwd`'
 alias hostfile="sudo vi /etc/hosts"
 
 # PHP
@@ -36,6 +40,7 @@ alias df="php artisan dusk --filter"
 
 # Git
 alias ga='git add'
+alias gaa='git add --all'
 alias gbdel='gbdel(){ git branch -D $1 && git push origin --delete $1 }; gbdel'
 alias gc='git commit -m'
 alias gca='git commit . -m'
@@ -50,6 +55,7 @@ alias gps='git push'
 alias gs='git status'
 alias nah='git reset --hard && git clean -df'
 alias wip='git add . && git commit -m "WIP"'
+alias undo='git reset --soft HEAD^'
 
 # Wordpress CLI
 alias wp='vendor/bin/wp'
