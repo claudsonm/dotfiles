@@ -95,3 +95,7 @@ sudo apt install git-flow -y
 echo 'Install gitk'
 echo '------------'
 sudo apt install gitk -y
+
+echo 'Install ack'
+echo '------------'
+sudo apt install ack -y
