@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# macOS specific installation comamnds
+# macOS specific installation commands
 
 # Install zsh
 echo 'Install oh-my-zsh'
@@ -76,6 +76,10 @@ echo '-------------'
 brew install mariadb
 brew services start mariadb
 
+echo 'Install sqlite'
+echo '-------------'
+brew install sqlite
+
 echo 'Install yarn'
 echo '------------'
 brew install yarn
@@ -87,3 +91,7 @@ brew install git-flow-avh
 echo 'Install gitk'
 echo '------------'
 brew install gitk
+
+echo 'Install ack'
+echo '------------'
+brew install ack

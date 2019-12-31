@@ -16,15 +16,24 @@ ln -s $HOME/.dotfiles/shell/.vim $HOME/.vim
 
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	source ~/.dotfiles/macos
+	source ~/.dotfiles/macos/installscript
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	source ~/.dotfiles/linux
+	source ~/.dotfiles/linux/installscript
 fi
 
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
+
+echo '++++++++++++++++++++++++++++++'
+echo 'Some optional steps'
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo '- Set some sensible macOS defaults by running: $HOME/.dotfiles/macos/set-defaults.sh'
+fi
+echo '- Make a .dotfiles-custom/shell/.aliases for your personal commands'
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
