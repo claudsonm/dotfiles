@@ -25,9 +25,16 @@ function mkd() {
 # (Requires PHP 5.4.0+.)
 function phpserver() {
 	local port="${1:-4000}"
-	local ip=$(ipconfig getifaddr en0)
-	sleep 2 && open "http://${ip}:${port}/" &
-	php -S "${ip}:${port}"
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    local ip=$(ipconfig getifaddr en0)
+    sleep 2 && open "http://${ip}:${port}/" &
+    php -S "${ip}:${port}"
+  fi
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    local ip=$(hostname -i | awk '{print $1}')
+    sleep 2 && sensible-browser "http://${ip}:${port}/" &
+    php -S "${ip}:${port}"
+  fi
 }
 
 
