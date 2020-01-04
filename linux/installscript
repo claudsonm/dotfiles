@@ -95,7 +95,7 @@ sudo apt-get install ack -y
 echo 'Install valet linux'
 echo '------------'
 composer global require cpriego/valet-linux
-valet install
+$HOME/.composer/vendor/bin/valet install
 
 echo 'Install laravel installer'
 echo '------------'
