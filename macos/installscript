@@ -45,6 +45,7 @@ echo 'Install php'
 echo '-----------'
 brew install php@7.2
 brew install php@7.4
+brew services start php@7.4
 
 echo 'Install imagemagick'
 echo '-------------------'
