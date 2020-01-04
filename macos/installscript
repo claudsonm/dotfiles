@@ -66,15 +66,10 @@ brew install redis
 brew services start redis
 pecl install redis
 
-echo 'Install laravel valet'
-echo '---------------------'
-composer global require laravel/valet
-valet install
-
-echo 'Install mariadb'
+echo 'Install mysql'
 echo '-------------'
-brew install mariadb
-brew services start mariadb
+brew install mysql
+brew services start mysql
 
 echo 'Install sqlite'
 echo '-------------'
@@ -95,3 +90,13 @@ brew install gitk
 echo 'Install ack'
 echo '------------'
 brew install ack
+
+echo 'Install laravel valet'
+echo '---------------------'
+composer global require laravel/valet
+valet install
+
+echo 'Install laravel installer'
+echo '------------'
+composer global require laravel/installer
+

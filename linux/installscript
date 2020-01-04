@@ -76,6 +76,10 @@ echo 'Install mysql'
 echo '-------------'
 sudo apt-get install mysql-server -y
 
+echo 'Install sqlite'
+echo '-------------'
+sudo apt-get install sqlite3 -y
+
 echo 'Install yarn'
 echo '------------'
 sudo apt-get install yarn -y

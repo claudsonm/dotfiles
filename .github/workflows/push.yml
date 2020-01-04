@@ -16,3 +16,17 @@ jobs:
         cd .dotfiles
     - name: Bootstrap installation
       run: echo 'y' | ./bootstrap
+
+  macos_install:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Clone repository into home directory
+      run: |
+        cd $HOME
+        git clone --recurse-submodules https://github.com/claudsonm/dotfiles.git .dotfiles
+        cd .dotfiles
+    - name: Bootstrap installation
+      run: echo 'y' | ./bootstrap
