@@ -6,9 +6,9 @@ echo 'Updating repository...'
 echo '-----------'
 sudo apt-get update
 
-echo 'Install build essential'
+echo 'Install support tools'
 echo '-----------'
-sudo apt-get install build-essential -y
+sudo apt-get install build-essential network-manager libnss3-tools jq xsel -y
 
 echo 'Install curl'
 echo '------------'
@@ -91,3 +91,12 @@ sudo apt-get install gitk -y
 echo 'Install ack'
 echo '------------'
 sudo apt-get install ack -y
+
+echo 'Install valet linux'
+echo '------------'
+composer global require cpriego/valet-linux
+valet install
+
+echo 'Install laravel installer'
+echo '------------'
+composer global require laravel/installer
