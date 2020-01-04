@@ -35,7 +35,7 @@ brew install node
 
 echo 'Install wget'
 echo '------------'
-brew install wget --overwrite
+brew install wget
 
 echo 'Install httpie'
 echo '--------------'
@@ -43,8 +43,6 @@ brew install httpie
 
 echo 'Install php'
 echo '-----------'
-brew install php@7.0
-brew install php@7.1
 brew install php@7.2
 brew install php@7.4
 
@@ -71,21 +69,17 @@ echo '-------------'
 brew install mysql
 brew services start mysql
 
-echo 'Install sqlite'
-echo '-------------'
-brew install sqlite
-
 echo 'Install yarn'
 echo '------------'
 brew install yarn
 
+echo 'Install git with gitk'
+echo '------------'
+brew install git
+
 echo 'Install git flow avh'
 echo '------------'
 brew install git-flow-avh
-
-echo 'Install gitk'
-echo '------------'
-brew install gitk
 
 echo 'Install ack'
 echo '------------'
@@ -94,7 +88,7 @@ brew install ack
 echo 'Install laravel valet'
 echo '---------------------'
 composer global require laravel/valet
-valet install
+$HOME/.composer/vendor/bin/valet install
 
 echo 'Install laravel installer'
 echo '------------'
