@@ -14,6 +14,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Increase the mouse speed. Was he slow? Yes!
 defaults write -g com.apple.mouse.scaling 16
 
+# Disable the Character Pick so we can print the key while holding
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
