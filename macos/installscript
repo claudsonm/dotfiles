@@ -47,14 +47,6 @@ brew install php@7.2
 brew install php@7.4
 brew services start php@7.4
 
-echo 'Install imagemagick'
-echo '-------------------'
-brew install imagemagick
-
-echo 'Install imagick'
-echo '---------------'
-pecl install imagick
-
 echo 'Install xdebug'
 echo '--------------'
 pecl install xdebug
@@ -67,8 +59,8 @@ pecl install redis
 
 echo 'Install mysql'
 echo '-------------'
-brew install mysql
-brew services start mysql
+brew install mysql@5.7
+brew services start mysql@5.7
 
 echo 'Install yarn'
 echo '------------'

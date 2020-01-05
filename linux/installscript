@@ -55,14 +55,6 @@ echo 'Install httpie'
 echo '--------------'
 sudo apt-get install httpie -y
 
-echo 'Install imagemagick'
-echo '-------------------'
-sudo apt-get install imagemagick -y
-
-echo 'Install imagick'
-echo '---------------'
-sudo apt-get install php-imagick -y
-
 echo 'Install xdebug'
 echo '--------------'
 sudo pecl install xdebug -y
