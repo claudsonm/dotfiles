@@ -84,6 +84,10 @@ echo 'Install gitk'
 echo '------------'
 sudo apt-get install gitk -y
 
+echo 'Install xclip'
+echo '------------'
+sudo apt-get install xclip -y
+
 echo 'Install ack'
 echo '------------'
 sudo apt-get install ack -y
