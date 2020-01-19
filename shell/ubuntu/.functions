@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Start a PHP server from a directory, optionally specifying the port
+
+phpserver() {
+	local port="${1:-4000}"
+  local ip=$(hostname -i | awk '{print $1}')
+  sleep 2 && sensible-browser "http://${ip}:${port}/" &
+  php -S "${ip}:${port}"
+}

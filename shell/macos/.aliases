@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# General
+alias docs='cd $HOME/Documents'
+alias sites='cd $HOME/Sites'
+alias phpstorm='open -a /Applications/PhpStorm.app `pwd`'

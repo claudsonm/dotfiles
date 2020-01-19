@@ -2,4 +2,4 @@
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-./src/preferences/ubuntu/privacy.sh
+# ./src/preferences/ubuntu/privacy.sh
