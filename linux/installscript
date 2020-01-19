@@ -1,18 +1,5 @@
 #!/bin/bash
 
-# GNU Linux specific installation comamnds
-
-echo 'Updating repository...'
-echo '-----------'
-sudo apt-get update
-
-echo 'Install support tools'
-echo '-----------'
-sudo apt-get install build-essential network-manager libnss3-tools jq xsel -y
-
-echo 'Install curl'
-echo '------------'
-sudo apt-get install curl -y
 
 # Install zsh
 echo 'Install oh-my-zsh'
