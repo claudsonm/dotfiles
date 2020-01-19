@@ -334,7 +334,7 @@ show_spinner() {
         if [ "$GITHUB_ACTIONS" != "true" ]; then
             printf "%s\n" "$frameText"
         else
-            printf "%s" "$frameText"
+            printf "."
         fi
 
         sleep 0.2
