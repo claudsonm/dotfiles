@@ -28,8 +28,8 @@ jobs:
         cd $HOME
         git clone --recurse-submodules https://github.com/claudsonm/dotfiles.git .dotfiles
         cd .dotfiles
-    - name: Bootstrap installation
-      run: echo 'y' | ./setup.sh
+    - name: Setup machine
+      run: bash ./setup.sh
 
   macos_install:
 
@@ -42,5 +42,5 @@ jobs:
         cd $HOME
         git clone --recurse-submodules https://github.com/claudsonm/dotfiles.git .dotfiles
         cd .dotfiles
-    - name: Bootstrap installation
-      run: echo 'y' | ./bootstrap
+    - name: Setup machine
+      run: bash ./setup.sh
