@@ -302,7 +302,7 @@ show_spinner() {
     # things correctly, it needs special treatment, hence,
     # the "is Travis CI?" checks.
 
-    if [ "$TRAVIS" != "true" ]; then
+    if [ "$GITHUB_ACTIONS" != "true" ]; then
 
         # Provide more space so that the text hopefully
         # doesn't reach the bottom line of the terminal window.
@@ -331,7 +331,7 @@ show_spinner() {
 
         # Print frame text.
 
-        if [ "$TRAVIS" != "true" ]; then
+        if [ "$GITHUB_ACTIONS" != "true" ]; then
             printf "%s\n" "$frameText"
         else
             printf "%s" "$frameText"
@@ -343,7 +343,7 @@ show_spinner() {
 
         # Clear frame text.
 
-        if [ "$TRAVIS" != "true" ]; then
+        if [ "$GITHUB_ACTIONS" != "true" ]; then
             tput rc
         else
             printf "\r"
