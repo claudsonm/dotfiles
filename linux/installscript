@@ -1,20 +1,5 @@
 #!/bin/bash
 
-
-# Install zsh
-echo 'Install oh-my-zsh'
-echo '-----------------'
-sudo apt-get install zsh -y
-rm -rf $HOME/.oh-my-zsh
-curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
-# Symlink zsh prefs
-rm -f $HOME/.zshrc
-ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
-
-# Making Oh My ZSH the default
-sudo chsh -s $(which zsh)
-
 echo 'Install php'
 echo '-----------'
 sudo apt-get install php7.4 -y

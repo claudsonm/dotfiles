@@ -12,6 +12,7 @@ update
 ./src/install/ubuntu/dependencies.sh
 
 ./src/install/ubuntu/misc_tools.sh
+./src/install/oh-my-zsh.sh
 ./src/install/ubuntu/dev_tools.sh
 
 ./src/install/ubuntu/cleanup.sh
