@@ -1,7 +1,7 @@
 #!/bin/bash
 
 . "src/utils.sh"
-. "src/install/ubuntu/utils.sh"
+. "src/install/macos/utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
