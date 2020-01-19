@@ -1,8 +1,8 @@
--name: Dotfiles Installation
+name: Dotfiles Installation
 
--on: [push]
+on: [push]
 
--jobs:
+jobs:
   linux_install:
     runs-on: ubuntu-latest
     steps:
@@ -16,7 +16,7 @@
       run: bash ./setup.sh
 
   macos_install:
-  
+
     runs-on: macos-latest
 
     steps:
