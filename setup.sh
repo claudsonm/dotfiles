@@ -31,6 +31,10 @@ main() {
 
     ./src/create_symbolic_links.sh "$@"
 
+     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ./src/install/main.sh
+
 }
 
 main "$@"
