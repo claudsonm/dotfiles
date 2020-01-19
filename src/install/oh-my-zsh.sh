@@ -1,7 +1,6 @@
 #!/bin/bash
 
 . "src/utils.sh"
-. "src/install/ubuntu/utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

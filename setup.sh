@@ -35,6 +35,16 @@ main() {
 
     ./src/install/main.sh
 
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ./src/preferences/main.sh
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    if ! $skipQuestions; then
+        ./src/restart.sh
+    fi
+
 }
 
 main "$@"
