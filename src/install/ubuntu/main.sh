@@ -6,12 +6,12 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 update
-upgrade
+# upgrade
 
-./build-essentials.sh
-./dependencies.sh
+./src/install/ubuntu/build-essentials.sh
+./src/install/ubuntu/dependencies.sh
 
-./misc_tools.sh
-./dev_tools.sh
+./src/install/ubuntu/misc_tools.sh
+./src/install/ubuntu/dev_tools.sh
 
-./cleanup.sh
+./src/install/ubuntu/cleanup.sh
