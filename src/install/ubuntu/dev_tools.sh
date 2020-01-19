@@ -25,7 +25,7 @@ install_package "Node" "nodejs"
 install_package "Yarn" "yarn"
 
 install_package "Redis" "redis-server"
-execute "sudo printf '\n' | pecl install redis" "PHP Redis extension"
+#execute "sudo printf '\n' | pecl install redis" "PHP Redis extension"
 
 install_package "MySQL" "mysql-server"
 

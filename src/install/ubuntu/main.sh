@@ -6,7 +6,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 update
-# upgrade
+upgrade
 
 ./src/install/ubuntu/build-essentials.sh
 ./src/install/ubuntu/dependencies.sh
