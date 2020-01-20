@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Create a new directory and enter it
@@ -53,4 +51,4 @@ db() {
 
 # Load OS specific aliases.
 
-. "shell/$OS/.functions"
+# . "shell/$OS/.functions"

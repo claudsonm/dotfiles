@@ -30,10 +30,6 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
-source "src/utils.sh"
-
-declare -r OS="$(get_os)"
-
 # User configuration
 
 # Load the shell dotfiles, and then some:

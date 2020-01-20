@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # ZSH
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -59,4 +57,5 @@ alias wp='vendor/bin/wp'
 
 # Load OS specific aliases.
 
-. "shell/$OS/.aliases"
+echo $OS"DO alias"
+#source "$HOME/.dotfiles/shell/$(get_os)/.aliases"

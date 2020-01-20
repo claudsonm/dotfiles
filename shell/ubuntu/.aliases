@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # General
 alias docs='cd $HOME/Documentos'
 alias sites='cd $HOME/Documentos/Projetos'

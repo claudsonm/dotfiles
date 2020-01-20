@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Start a PHP server from a directory, optionally specifying the port
