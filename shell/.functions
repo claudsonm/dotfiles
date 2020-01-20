@@ -51,4 +51,10 @@ db() {
 
 # Load OS specific aliases.
 
-# . "shell/$OS/.functions"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	source ~/.dotfiles/shell/macos/.functions
+fi
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	source ~/.dotfiles/shell/ubuntu/.functions
+fi

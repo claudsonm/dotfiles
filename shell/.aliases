@@ -57,5 +57,10 @@ alias wp='vendor/bin/wp'
 
 # Load OS specific aliases.
 
-echo $OS"DO alias"
-#source "$HOME/.dotfiles/shell/$(get_os)/.aliases"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	source ~/.dotfiles/shell/macos/.aliases
+fi
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	source ~/.dotfiles/shell/ubuntu/.aliases
+fi
