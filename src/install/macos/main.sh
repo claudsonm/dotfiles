@@ -12,3 +12,4 @@
 ./src/install/macos/misc_tools.sh
 ./src/install/oh-my-zsh.sh
 ./src/install/macos/dev_tools.sh
+./src/install/macos/casks.sh

@@ -23,9 +23,9 @@ execute "brew services start redis" "Starting Redis service"
 
 execute "printf '\n' | pecl install redis" "Redis PEAR extension"
 
-brew_install "MySQL 5.7" "mysql@5.7"
-execute "brew link mysql@5.7 --force" "Linking MySQL binaries"
-execute "brew services start mysql@5.7" "Starting MySQL service"
+brew_install "MySQL" "mysql"
+execute "brew services start mysql" "Starting MySQL service"
+execute "mysql -u root -e \"ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;\"" "Updating MySQL authentication driver"
 
 brew_install "Yarn" "yarn"
 
