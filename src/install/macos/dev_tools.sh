@@ -25,6 +25,8 @@ execute "printf '\n' | pecl install redis" "Redis PEAR extension"
 
 brew_install "MySQL" "mysql"
 execute "brew services start mysql" "Starting MySQL service"
+execute "sleep 5" "Waiting MySQL services to be ready..."
+execute "sudo rm -f /tmp/mysql.sock.lock" "Deleting possible socket lock file"
 execute "mysql -u root -e \"ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;\"" "Updating MySQL authentication driver"
 
 brew_install "Yarn" "yarn"
