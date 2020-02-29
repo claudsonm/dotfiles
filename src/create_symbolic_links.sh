@@ -12,6 +12,7 @@ create_symlinks() {
         "shell/php_cs.dist"
         "shell/vimrc"
         "shell/zshrc"
+        "shell/mackup"
     )
 
     local i=""
