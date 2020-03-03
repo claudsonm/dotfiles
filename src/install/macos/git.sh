@@ -9,3 +9,4 @@ print_in_purple "\n   Git\n\n"
 
 brew_install "Git" "git"
 brew_install "Git Flow" "git-flow-avh"
+brew_install "Gitk" "git-gui"
