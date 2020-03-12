@@ -27,4 +27,4 @@ jobs:
         git clone --recurse-submodules https://github.com/claudsonm/dotfiles.git .dotfiles
         cd .dotfiles
     - name: Setup machine
-      run: bash ./setup.sh
+      run: echo "Setup not executed" # bash ./setup.sh

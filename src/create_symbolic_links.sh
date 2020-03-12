@@ -7,6 +7,7 @@
 create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
+        "shell/ackrc"
         "shell/gitignore"
         "shell/hushlogin"
         "shell/php_cs.dist"

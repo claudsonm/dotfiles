@@ -17,3 +17,6 @@ export LESS_TERMCAP_md="$ORANGE"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+
+# Don't clear the screen, ignore case, exit if text is too short and colors.
+export LESS=-iXFR
