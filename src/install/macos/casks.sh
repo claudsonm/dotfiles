@@ -27,3 +27,4 @@ brew_install "Postman" "postman" "homebrew/cask" "cask"
 
 execute "mas install 595191960" "CopyClip - Clipboard History"
 execute "mas install 823766827" "OneDrive"
+execute "mas install 803453959" "Slack"
