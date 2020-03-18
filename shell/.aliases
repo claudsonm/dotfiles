@@ -16,7 +16,7 @@ alias m='php artisan migrate'
 alias mr='php artisan migrate:rollback'
 alias mf='php artisan migrate:fresh'
 alias mfs='php artisan migrate:fresh --seed'
-alias t='rlwrap php artisan tinker'
+alias tk='rlwrap php artisan tinker'
 alias routes='php artisan route:list'
 alias ide-helper-files='php artisan clear-compiled && php artisan ide-helper:models -n && php artisan ide-helper:eloquent && php artisan ide-helper:generate && php artisan ide-helper:meta'
 alias c="composer"
@@ -28,6 +28,8 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias hashid="head /dev/urandom | tr -dc 'A-Za-z0-9!#$%&()*+,-./:;<=>?@[\]^_{|}~' | head -c 32 ; echo"
 alias p="phpunit --order-by=defects --stop-on-defect"
 alias pf="phpunit --filter"
+alias t="php artisan test --order-by=defects --stop-on-defect"
+alias tf="php artisan test --filter"
 alias d="php artisan dusk"
 alias df="php artisan dusk --filter"
 alias fix="php-cs-fixer fix"
