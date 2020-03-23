@@ -31,7 +31,6 @@ alias pf="phpunit --filter"
 alias t="php artisan test --order-by=defects --stop-on-defect"
 alias tf="php artisan test --filter"
 alias d="php artisan dusk"
-alias df="php artisan dusk --filter"
 alias fix="php-cs-fixer fix"
 
 # Git

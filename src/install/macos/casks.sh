@@ -24,6 +24,7 @@ brew_install "TablePlus" "tableplus" "homebrew/cask" "cask"
 brew_install "iTerm 2" "iterm2" "homebrew/cask" "cask"
 brew_install "MySQL Workbench" "mysqlworkbench" "homebrew/cask" "cask"
 brew_install "Postman" "postman" "homebrew/cask" "cask"
+brew_install "Alfred" "alfred" "homebrew/cask" "cask"
 
 execute "mas install 595191960" "CopyClip - Clipboard History"
 execute "mas install 823766827" "OneDrive"
