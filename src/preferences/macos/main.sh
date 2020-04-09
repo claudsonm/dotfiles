@@ -35,7 +35,7 @@ execute "defaults write com.apple.helpviewer DevMode -bool true" \
 
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
 
-execute "defaults write -g com.apple.mouse.scaling 16" \
+execute "defaults write -g com.apple.mouse.scaling 17" \
     "Increase the mouse speed"
 
 execute "defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true" \
