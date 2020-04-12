@@ -38,3 +38,7 @@ execute "composer global require laravel/installer" "Laravel Installer"
 execute "composer global require laravel/valet" "Laravel Valet (downloading)"
 
 execute "$HOME/.composer/vendor/bin/valet install" "Laravel Valet (installing)"
+
+brew_install "Terraform" "terraform"
+
+brew_install "AWS CLI" "awscli"
