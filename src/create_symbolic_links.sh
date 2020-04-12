@@ -13,6 +13,7 @@ create_symlinks() {
         "shell/php_cs.dist"
         "shell/vimrc"
         "shell/zshrc"
+        "shell/terraformrc"
         "shell/mackup.cfg"
     )
 
