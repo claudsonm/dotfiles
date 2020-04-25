@@ -42,3 +42,7 @@ execute "$HOME/.composer/vendor/bin/valet install" "Laravel Valet (installing)"
 brew_install "Terraform" "terraform"
 
 brew_install "AWS CLI" "awscli"
+
+brew_install "AWS EKS CLI" "weaveworks/tap/eksctl" "weaveworks/tap"
+
+brew_install "Graphviz" "graphviz"
