@@ -43,6 +43,8 @@ brew_install "Terraform" "terraform"
 
 brew_install "AWS CLI" "awscli"
 
-brew_install "AWS EKS CLI" "weaveworks/tap/eksctl" "weaveworks/tap"
+brew_install "AWS Elastic Kubernetes Service CLI" "weaveworks/tap/eksctl" "weaveworks/tap"
+
+brew_install "AWS Elastic Beanstalk CLI" "awsebcli"
 
 brew_install "Graphviz" "graphviz"
