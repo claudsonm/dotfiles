@@ -25,13 +25,14 @@ alias cr="composer require"
 alias ci="composer install"
 alias cda="composer dump-autoload -o"
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
+alias yfresh="rm -rf node_modules/ yarn.lock && yarn install"
 alias hashid="head /dev/urandom | tr -dc 'A-Za-z0-9!#$%&()*+,-./:;<=>?@[\]^_{|}~' | head -c 32 ; echo"
 alias p="phpunit --order-by=defects --stop-on-defect"
 alias pf="phpunit --filter"
 alias t="php artisan test --order-by=defects --stop-on-defect"
 alias tf="php artisan test --filter"
 alias d="php artisan dusk"
-alias fix="php-cs-fixer fix"
+alias fix="php-cs-fixer fix --verbose"
 
 # Git
 alias ga='git add'
