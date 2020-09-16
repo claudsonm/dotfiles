@@ -25,6 +25,8 @@ execute "brew services start redis" "Starting Redis service"
 
 execute "printf '\n' | pecl install redis" "Redis PEAR extension"
 
+execute "printf '\n' | pecl install mongodb" "MongoDB PEAR extension"
+
 brew_install "MySQL" "mysql"
 execute "brew services start mysql" "Starting MySQL service"
 execute "sleep 5" "Waiting MySQL services to be ready..."
