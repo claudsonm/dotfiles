@@ -51,6 +51,16 @@ execute "defaults write NSGlobalDomain KeyRepeat -int 2" \
 execute "defaults write NSGlobalDomain InitialKeyRepeat -int 15" \
 	"Set a blazingly fast keyboard repeat rate"
 
+execute "defaults write com.apple.touchbar.agent PresentationModeGlobal -string \"functionKeys\"" \
+	"Touch Bar shows function keys"
+execute "defaults write -g com.apple.keyboard.fnState -boolean true" \
+	"Use F1, F2, etc. as standard function keys"
+
+execute "defaults write -g NSAutomaticCapitalizationEnabled -boolean false" \
+	"Disable automatically capitalization"
+execute "defaults write -g NSAutomaticPeriodSubstitutionEnabled -boolean false" \
+	"Disable double-spaces period substitution"
+
 execute "defaults write NSGlobalDomain AppleLanguages -array \"pt-BR\" \"en\"" \
 	"Setting preferred languages"
 execute "defaults write NSGlobalDomain AppleLocale -string \"pt_BR\"" \
@@ -104,6 +114,11 @@ execute "chflags nohidden ~/Library" "Show the ~/Library folder"
 execute "defaults write com.apple.dock tilesize -int 44" \
 	"Set the icon size of Dock items to 44 pixels"
 
+execute "defaults write com.apple.dock magnification -bool true" \
+	"Enable magnification effect when hovering icons"
+execute "defaults write com.apple.dock largesize -int 75" \
+	"Adjust magnification size"
+
 execute "defaults write com.apple.dock mineffect -string \"scale\"" \
 	"Change minimize/maximize window effect"
 
@@ -121,6 +136,9 @@ execute "defaults write com.apple.dock dashboard-in-overlay -bool true" \
 
 execute "defaults write com.apple.dock show-recents -bool false" \
 	"Don’t show recent applications in Dock"
+
+execute "defaults write com.apple.dock expose-group-apps -bool true" \
+	"Group windows by app"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
