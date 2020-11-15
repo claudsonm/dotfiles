@@ -51,8 +51,6 @@ execute "defaults write NSGlobalDomain KeyRepeat -int 2" \
 execute "defaults write NSGlobalDomain InitialKeyRepeat -int 15" \
 	"Set a blazingly fast keyboard repeat rate"
 
-execute "defaults write com.apple.touchbar.agent PresentationModeGlobal -string \"functionKeys\"" \
-	"Touch Bar shows function keys"
 execute "defaults write -g com.apple.keyboard.fnState -boolean true" \
 	"Use F1, F2, etc. as standard function keys"
 
