@@ -38,6 +38,18 @@ execute "defaults write com.apple.helpviewer DevMode -bool true" \
 execute "defaults write -g com.apple.mouse.scaling 17" \
     "Increase the mouse speed"
 
+execute "defaults write -g com.apple.swipescrolldirection -bool false" \
+	"Disables the natural swipe scroll movement"
+
+execute "defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true" \
+	"Enables general tap to click behavior"
+execute "sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true" \
+	"Enables tab to click for the Magic Trackpad"
+execute "sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1" \
+	"Support for tap to click at the login screen"
+execute "sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1" \
+	"Support for tap to click at the boot screen"
+
 execute "defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true" \
 	"Use scroll gesture with the Ctrl (^) modifier key to zoom"
 execute "defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144" \
