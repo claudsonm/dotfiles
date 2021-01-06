@@ -1,0 +1,13 @@
+[user]
+	name = Claudson Martins
+	email = claudson@outlook.com
+[core]
+	excludesfile = /Users/claudson/.gitignore
+[gitflow "feature.finish"]
+	push = yes
+[gitflow "bugfix.finish"]
+	push = yes
+[gitflow "hotfix.finish"]
+	push = yes
+[remote "origin"]
+	prune = true
