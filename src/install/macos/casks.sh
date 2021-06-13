@@ -22,7 +22,6 @@ brew_install "iTerm 2" "iterm2"
 brew_install "Postman" "postman"
 brew_install "Alfred" "alfred"
 brew_install "GitHub Desktop" "github"
-brew_install "Docker Desktop" "docker"
 brew_install "Discord" "discord"
 
 execute "mas install 595191960" "CopyClip - Clipboard History"
