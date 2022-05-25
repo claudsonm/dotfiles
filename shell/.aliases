@@ -10,6 +10,7 @@ alias ip="curl 'https://api.ipify.org?format=text' ; echo"
 alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias hostfile="sudo vi /etc/hosts"
 alias cat=ccat
+alias k=kubectl
 
 # PHP
 alias a='php artisan'
