@@ -21,6 +21,7 @@ alias mfs='php artisan migrate:fresh --seed'
 alias tk='rlwrap php artisan tinker'
 alias routes='php artisan route:list'
 alias ide-helper-files='php artisan clear-compiled && php artisan ide-helper:models -n && php artisan ide-helper:eloquent && php artisan ide-helper:generate && php artisan ide-helper:meta'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias c="composer"
 alias cu="composer update"
 alias cr="composer require"
