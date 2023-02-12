@@ -14,6 +14,8 @@ phpv() {
 
 alias php72="phpv php@7.2"
 alias php74="phpv php@7.4"
+alias php81="phpv php@8.1"
+alias php82="phpv php@8.2"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
