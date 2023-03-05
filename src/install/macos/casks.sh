@@ -13,7 +13,7 @@ brew_install "Quick Look Color Code" "qlcolorcode"
 brew_install "Quick Look MD" "qlmarkdown"
 brew_install "Quick Look Stephen" "qlstephen"
 
-brew_install "Deezer" "deezer"
+brew_install "Spotify" "spotify"
 
 brew_install "PhpStorm" "phpstorm"
 brew_install "VS Code" "visual-studio-code"

@@ -50,9 +50,9 @@ execute "sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBeha
 execute "sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1" \
 	"Support for tap to click at the boot screen"
 
-execute "defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true" \
+execute "sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true" \
 	"Use scroll gesture with the Ctrl (^) modifier key to zoom"
-execute "defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144" \
+execute "sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144" \
 	"Use scroll gesture with the Ctrl (^) modifier key to zoom"
 
 execute "defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false" \

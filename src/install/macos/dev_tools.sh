@@ -13,13 +13,15 @@ brew_install "Node" "node"
 # execute "sudo chown -R $(whoami) $(brew --prefix)" "Changing ownership of brew apps folder"
 # brew link --overwrite node
 
-brew_install "PHP Latest (8.*)" "php"
+brew_install "PHP Latest" "php"
 
-brew_install "PHP 7.2" "php@7.2"
+brew_install "PHP 8.1" "php@8.1"
 
-brew_install "PHP 7.4" "php@7.4"
-execute "brew unlink php && brew link php@7.4" "Switching to PHP 7.4"
-execute "brew services start php@7.4" "Starting PHP 7.4 service"
+# Using alternative repository to install older versions of PHP
+# brew_tap "shivammathur/php"
+# brew_install "PHP 7.4" "shivammathur/php/php@7.4"
+# execute "brew unlink php && brew link php@7.4" "Switching to PHP 7.4"
+# execute "brew services start shivammathur/php/php@7.4" "Starting PHP 7.4 service"
 
 execute "printf '\n' | pecl install xdebug" "Xdebug PEAR extension"
 
