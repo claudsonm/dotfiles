@@ -13,3 +13,4 @@
 ./src/install/oh-my-zsh.sh
 ./src/install/macos/dev_tools.sh
 ./src/install/macos/casks.sh
+./src/install/macos/fonts.sh
