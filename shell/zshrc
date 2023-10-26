@@ -39,6 +39,10 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
+# gcloud components for homebrew
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
 # User configuration
 
 # Load the shell dotfiles, and then some:
@@ -72,3 +76,5 @@ export NVM_DIR="$HOME/.nvm"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
+
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
