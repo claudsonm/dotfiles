@@ -46,3 +46,11 @@ xdebug() {
       echo "xdebug is now inactive";
    fi
 }
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Gitignore.io
+
+gi() {
+   curl -sL https://www.toptal.com/developers/gitignore/api/$@;
+}
