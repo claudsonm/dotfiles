@@ -12,3 +12,7 @@ execute \
 execute \
     "sudo chsh -s $(which zsh)" \
     "Making Oh My Zsh the default shell"
+
+execute \
+    "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" \
+    "Cloning Oh My ZSH powerlevel10k theme"
