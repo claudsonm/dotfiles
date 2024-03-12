@@ -129,7 +129,7 @@ execute "defaults write com.apple.dock magnification -bool true" \
 execute "defaults write com.apple.dock largesize -int 75" \
 	"Adjust magnification size"
 
-execute "defaults write com.apple.dock mineffect -string \"scale\"" \
+execute "defaults write com.apple.dock mineffect -string \"genie\"" \
 	"Change minimize/maximize window effect"
 
 execute "defaults write com.apple.dock minimize-to-application -bool true" \
