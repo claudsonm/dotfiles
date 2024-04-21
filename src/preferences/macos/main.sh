@@ -150,6 +150,9 @@ execute "defaults write com.apple.dock show-recents -bool false" \
 execute "defaults write com.apple.dock expose-group-apps -bool true" \
 	"Group windows by app"
 
+execute "defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false" \
+	"Disable standard click to show desktop"
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Applications
