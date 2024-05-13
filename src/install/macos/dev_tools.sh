@@ -57,3 +57,7 @@ brew_install "AWS Elastic Kubernetes Service CLI" "weaveworks/tap/eksctl" "weave
 brew_install "AWS Elastic Beanstalk CLI" "awsebcli"
 
 brew_install "Graphviz" "graphviz"
+
+brew_install "Steampipe" "turbot/tap/steampipe"
+
+brew_install "Powerpipe" "turbot/tap/powerpipe"
