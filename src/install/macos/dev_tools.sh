@@ -61,3 +61,7 @@ brew_install "Graphviz" "graphviz"
 brew_install "Steampipe" "turbot/tap/steampipe"
 
 brew_install "Powerpipe" "turbot/tap/powerpipe"
+
+brew_install "Ruby Build" "ruby-build"
+
+brew_install "Ruby Env" "rbenv"
