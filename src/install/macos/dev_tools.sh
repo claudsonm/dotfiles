@@ -65,3 +65,5 @@ brew_install "Powerpipe" "turbot/tap/powerpipe"
 brew_install "Ruby Build" "ruby-build"
 
 brew_install "Ruby Env" "rbenv"
+
+brew_install "Kustomize" "kustomize"
