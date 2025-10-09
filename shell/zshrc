@@ -37,8 +37,6 @@ if [ $(pgrep -f "ssh-agent -s" > /dev/null 2>&1; echo $?) -eq 0 ] ; then
 else
     eval "$(ssh-agent -s)"
     ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-    ssh-add --apple-use-keychain ~/.ssh/bitbucket_made
-    ssh-add --apple-use-keychain ~/.ssh/bitbucket_made_pessoal
 fi
 
 # Reloading the completion for zsh-completions
@@ -89,3 +87,4 @@ complete -o nospace -C /opt/homebrew/bin/terragrunt terragrunt
 
 eval "$(rbenv init - zsh)"
 
+source <(k3d completion zsh)
