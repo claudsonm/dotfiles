@@ -69,3 +69,5 @@ brew_install "Ruby Env" "rbenv"
 brew_install "Kustomize" "kustomize"
 
 brew_install "TF Env" "tfenv"
+
+brew_install "ArgoCD" "argocd"
