@@ -15,6 +15,7 @@ create_symlinks() {
         "shell/zshrc"
         "shell/terraformrc"
         "shell/mackup.cfg"
+        "shell/p10k.zsh"
     )
 
     local i=""
