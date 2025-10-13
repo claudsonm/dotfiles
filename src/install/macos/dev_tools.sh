@@ -48,6 +48,8 @@ execute "$HOME/.composer/vendor/bin/valet install" "Laravel Valet (installing)"
 
 brew_install "GitHub CLI" "gh"
 
+brew_install "Color CAT" "ccat"
+
 brew_install "AWS CLI" "awscli"
 
 brew_install "AWS Elastic Kubernetes Service CLI" "weaveworks/tap/eksctl" "weaveworks/tap"
@@ -64,9 +66,11 @@ brew_install "Ruby Build" "ruby-build"
 
 brew_install "Ruby Env" "rbenv"
 
+brew_install "TF Env" "tfenv"
+
 brew_install "Kustomize" "kustomize"
 
-brew_install "TF Env" "tfenv"
+brew_install "k3d" "k3d"
 
 brew_install "ArgoCD" "argocd"
 
@@ -75,3 +79,6 @@ brew_install "Pre Commit" "pre-commit"
 brew_install "YAML Lint" "yamllint"
 
 brew_install "Shell Check" "shellcheck"
+
+execute "brew install --cask gcloud-cli" "Google Cloud CLI"
+
