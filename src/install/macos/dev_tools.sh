@@ -7,7 +7,7 @@
 
 print_in_purple "\n   Development Tools\n\n"
 
-brew_install "Node" "node"
+brew_install "Node" "nodenv"
 # execute "sudo chown -R $(whoami) $(brew --prefix)" "Changing ownership of brew apps folder"
 # brew link --overwrite node
 
@@ -69,3 +69,9 @@ brew_install "Kustomize" "kustomize"
 brew_install "TF Env" "tfenv"
 
 brew_install "ArgoCD" "argocd"
+
+brew_install "Pre Commit" "pre-commit"
+
+brew_install "YAML Lint" "yamllint"
+
+brew_install "Shell Check" "shellcheck"
