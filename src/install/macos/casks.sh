@@ -26,5 +26,7 @@ brew_install "Discord" "discord"
 
 execute "mas install 595191960" "CopyClip - Clipboard History"
 execute "mas install 823766827" "OneDrive"
-#execute "mas install 803453959" "Slack"
+execute "mas install 803453959" "Slack"
 execute "mas install 441258766" "Magnet"
+execute "mas install 310633997" "WhatsApp"
+execute "mas install 1295203466" "Windows App"
