@@ -7,8 +7,8 @@
 
 print_in_purple "\n   Fonts\n\n"
 
-brew_install "Inconsolata" "font-inconsolata" "homebrew/cask-fonts"
+execute "brew install --cask font-inconsolata" "Inconsolata"
 
-brew_install "Jetbrains Mono" "font-jetbrains-mono" "homebrew/cask-fonts"
+execute "brew install --cask font-jetbrains-mono" "Jetbrains Mono"
 
-brew_install "Cascadia Code" "font-cascadia-code" "homebrew/cask-fonts"
+execute "brew install --cask font-cascadia-code" "Cascadia Code"

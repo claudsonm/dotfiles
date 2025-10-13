@@ -36,7 +36,7 @@ brew_install "MySQL" "mysql"
 execute "brew services start mysql" "Starting MySQL service"
 execute "sleep 5" "Waiting MySQL services to be ready..."
 execute "sudo rm -f /tmp/mysql.sock.lock" "Deleting possible socket lock file"
-execute "mysql -u root -e \"ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY ''; FLUSH PRIVILEGES;\"" "Updating MySQL authentication driver"
+# execute "mysql -u root -e \"ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY ''; FLUSH PRIVILEGES;\"" "Updating MySQL authentication driver"
 
 brew_install "Yarn" "yarn"
 
@@ -47,8 +47,6 @@ execute "composer global require laravel/valet" "Laravel Valet (downloading)"
 execute "$HOME/.composer/vendor/bin/valet install" "Laravel Valet (installing)"
 
 brew_install "GitHub CLI" "gh"
-
-brew_install "Terraform" "terraform"
 
 brew_install "AWS CLI" "awscli"
 
