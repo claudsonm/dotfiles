@@ -7,13 +7,13 @@
 
 print_in_purple "\n   Development Tools\n\n"
 
-brew_install "Composer" "composer"
-
 brew_install "Node" "node"
 # execute "sudo chown -R $(whoami) $(brew --prefix)" "Changing ownership of brew apps folder"
 # brew link --overwrite node
 
 brew_install "PHP Latest" "php"
+
+brew_install "Composer" "composer"
 
 brew_install "PHP 8.1" "php@8.1"
 
