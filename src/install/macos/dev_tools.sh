@@ -72,6 +72,8 @@ brew_install "Kustomize" "kustomize"
 
 brew_install "k3d" "k3d"
 
+brew_install "Helm" "helm"
+
 brew_install "ArgoCD" "argocd"
 
 brew_install "Pre Commit" "pre-commit"
