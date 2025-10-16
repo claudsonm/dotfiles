@@ -54,3 +54,25 @@ xdebug() {
 gi() {
    curl -sL https://www.toptal.com/developers/gitignore/api/$@;
 }
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# VPN GlobalProtect
+
+gprotect() {
+  case "$1" in
+    start)
+      echo "🔄 Starting GlobalProtect..."
+      launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp* 2>/dev/null
+      echo "✅ GlobalProtect started."
+      ;;
+    stop)
+      echo "🛑 Stopping GlobalProtect..."
+      launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp* 2>/dev/null
+      echo "✅ GlobalProtect stopped."
+      ;;
+    *)
+      echo "Usage: gprotect {start|stop}"
+      ;;
+  esac
+}
