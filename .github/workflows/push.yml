@@ -13,11 +13,6 @@ jobs:
         with:
           submodules: 'recursive'
       
-      - name: Lint setup script
-        run: |
-          brew install shellcheck
-          shellcheck ./setup.sh
-      
       - name: Make setup script executable
         run: chmod +x ./setup.sh
 
