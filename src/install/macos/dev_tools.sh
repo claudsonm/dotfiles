@@ -84,3 +84,4 @@ brew_install "Shell Check" "shellcheck"
 
 execute "brew install --cask gcloud-cli" "Google Cloud CLI"
 
+execute "brew install --cask keybase" "Keybase"
