@@ -7,7 +7,7 @@
 
 print_in_purple "\n   Development Tools\n\n"
 
-brew_install "Node" "nodenv"
+execute "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash" "Node Version Manager (NVM)"
 # execute "sudo chown -R $(whoami) $(brew --prefix)" "Changing ownership of brew apps folder"
 # brew link --overwrite node
 
