@@ -96,6 +96,9 @@ execute "defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 execute "defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false" \
 	"Do not display icons for removable devices on desktop"
 
+execute "defaults write com.apple.finder ShowPathbar -bool true" \
+    "Display breadcrumbs path in finder Finder"
+
 execute "defaults write com.apple.finder _FXShowPosixPathInTitle -bool true" \
     "Display full POSIX path as Finder window title"
 
