@@ -66,6 +66,10 @@ brew_install "Ruby Build" "ruby-build"
 
 brew_install "Ruby Env" "rbenv"
 
+execute "brew install --cask docker-desktop" "Docker Desktop"
+
+brew_install "Krew" "krew"
+
 brew_install "TF Env" "tfenv"
 
 brew_install "Kustomize" "kustomize"
