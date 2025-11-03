@@ -86,6 +86,10 @@ brew_install "YAML Lint" "yamllint"
 
 brew_install "Shell Check" "shellcheck"
 
+brew_install "BTOP" "btop"
+
+brew_install "Python Version Management" "pyenv"
+
 execute "brew install --cask gcloud-cli" "Google Cloud CLI"
 
 execute "brew install --cask keybase" "Keybase"
