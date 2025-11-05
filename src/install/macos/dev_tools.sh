@@ -80,6 +80,8 @@ brew_install "Helm" "helm"
 
 brew_install "ArgoCD" "argocd"
 
+brew_install "kubectx + kubens" "kubectx"
+
 brew_install "Pre Commit" "pre-commit"
 
 brew_install "YAML Lint" "yamllint"
