@@ -48,15 +48,11 @@ execute "$HOME/.composer/vendor/bin/valet install" "Laravel Valet (installing)"
 
 brew_install "GitHub CLI" "gh"
 
-brew_install "Color CAT" "ccat"
-
 brew_install "AWS CLI" "awscli"
 
 brew_install "AWS Elastic Kubernetes Service CLI" "weaveworks/tap/eksctl" "weaveworks/tap"
 
 brew_install "AWS Elastic Beanstalk CLI" "awsebcli"
-
-brew_install "Graphviz" "graphviz"
 
 brew_install "Steampipe" "turbot/tap/steampipe"
 
@@ -87,8 +83,6 @@ brew_install "Pre Commit" "pre-commit"
 brew_install "YAML Lint" "yamllint"
 
 brew_install "Shell Check" "shellcheck"
-
-brew_install "BTOP" "btop"
 
 brew_install "SOPS: Secrets OPerationS" "sops"
 
