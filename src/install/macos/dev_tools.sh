@@ -88,6 +88,8 @@ brew_install "SOPS: Secrets OPerationS" "sops"
 
 brew_install "Python Version Management" "pyenv"
 
+brew_install "Ansible" "ansible"
+
 execute "brew install --cask gcloud-cli" "Google Cloud CLI"
 
 execute "brew install --cask keybase" "Keybase"
